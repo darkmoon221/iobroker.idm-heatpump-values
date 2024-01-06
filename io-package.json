@@ -1,0 +1,105 @@
+{
+    "common": {
+        "name": "idm-heatpump-values",
+        "version": "0.0.1",
+        "news": {
+            "0.0.1": {
+                "en": "initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Начальная версия",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie",
+                "zh-cn": "首次出版"
+            }
+        },
+        "title": "idm heatpump values",
+        "titleLang": {
+            "en": "idm heatpump values",
+            "de": "idm heatpump values",
+            "ru": "idm heatpump values",
+            "pt": "idm heatpump values",
+            "nl": "idm heatpump values",
+            "fr": "idm heatpump values",
+            "it": "idm heatpump values",
+            "es": "idm heatpump values",
+            "pl": "idm heatpump values",
+            "zh-cn": "idm heatpump values"
+        },
+        "desc": {
+            "en": "idm-heatpump-values",
+            "de": "idm-heatpump-values",
+            "ru": "idm-heatpump-values",
+            "pt": "idm-heatpump-values",
+            "nl": "idm-heatpump-values",
+            "fr": "idm-heatpump-values",
+            "it": "idm-heatpump-values",
+            "es": "idm-heatpump-values",
+            "pl": "idm-heatpump-values",
+            "zh-cn": "idm-heatpump-values"
+        },
+        "authors": [
+            "Tobias K <dev.kronschnabl@gmail.com>"
+        ],
+        "keywords": [
+            "idm heatpump"
+        ],
+        "license": "MIT",
+        "platform": "Javascript/Node.js",
+        "main": "build/main.js",
+        "icon": "idm-heatpump-values.jpg",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/darkmoon221/ioBroker.idm-heatpump-values/main/admin/idm-heatpump-values.jpg",
+        "readme": "https://github.com/darkmoon221/ioBroker.idm-heatpump-values/blob/main/README.md",
+        "loglevel": "info",
+        "mode": "daemon",
+        "type": "energy",
+        "compact": true,
+        "connectionType": "cloud",
+        "dataSource": "poll",
+        "adminUI": {
+            "config": "json"
+        },
+        "dependencies": [
+            {
+                "js-controller": ">=3.3.22"
+            }
+        ],
+        "globalDependencies": [
+            {
+                "admin": ">=5.1.13"
+            }
+        ]
+    },
+    "native": {
+        "username": "",
+        "password": ""
+    },
+    "objects": [],
+    "instanceObjects": [
+        {
+            "_id": "info",
+            "type": "channel",
+            "common": {
+                "name": "Information"
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.connection",
+            "type": "state",
+            "common": {
+                "role": "indicator.connected",
+                "name": "Device or service connected",
+                "type": "boolean",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        }
+    ]
+}
