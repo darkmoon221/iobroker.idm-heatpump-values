@@ -1,0 +1,26 @@
+{
+    "i18n": true,
+    "type": "panel",
+    "items": {
+        "localIdmUrl": {
+            "type": "text",
+            "label": "Lokale IDM URL",
+            "newLine": true
+        },
+        "pin": {
+            "type": "password",
+            "label": "Lokale IDM PIN",
+            "newLine": true
+        },
+        "username": {
+            "type": "text",
+            "label": "Username",
+            "newLine": true
+        },
+        "password": {
+            "type": "password",
+            "label": "Password",
+            "newLine": true
+        }
+    }
+}
